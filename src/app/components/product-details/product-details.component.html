@@ -1,0 +1,10 @@
+<div *ngIf="product">
+  <div>
+    <label>Name: </label> {{product.name}}
+  </div>
+  <div>
+    <label>Description: </label> {{product.description}}
+  </div>
+  <button class="button is-small btn-danger" (click)='deleteproduct(product.id)'>Delete Product</button>
+  <hr/>
+</div>
